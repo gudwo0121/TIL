@@ -2,13 +2,13 @@
 
 ****
 
-* ## [algorithm](https://github.com/gudwo0121/TIL.git/algorithm)
+* ## [algorithm](https://github.com/gudwo0121/TIL/tree/master/algorithm)
 
-* ## [git-bash](https://github.com/gudwo0121/TIL.git/git-bash)
+* ## [git-bash](https://github.com/gudwo0121/TIL/tree/master/git-bash)
 
-* ## [java](https://github.com/gudwo0121/TIL.git/java)
+* ## [java](https://github.com/gudwo0121/TIL/tree/master/java)
 
-* ## [typora](https://github.com/gudwo0121/TIL.git/typora)
+* ## [typora](https://github.com/gudwo0121/TIL/tree/master/typora)
 
 
 
