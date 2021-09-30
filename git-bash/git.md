@@ -62,7 +62,23 @@ Changes to be committed:
 
 ### `log`
 
+****
 
+1. 가지치기 (branch)
 
+-> 그 과정에서 나오는 충돌 (동일파일 수정후 머지할때)
 
+-> 서로 다른 파일 수정 후 머지는 충돌 x 자동 머지 가능
+
+-> master말고 sub만 수정해서 머지해도 가능
+
+2. push
+3. pull
+4. clone
+5. checkout -b
+6. restore --staged
+7. fork -> PR
+8. reset / revert ??? 솔직히 잘모르겠음
+9. touch .gitignore
+10. gitignore.io 사이트가서 프로젝트 시작전 설정해줘야함 = 무시(안보여야하는) 파일
 
