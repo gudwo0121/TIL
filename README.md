@@ -10,8 +10,7 @@
 
 * ## [markdown](https://github.com/gudwo0121/TIL/tree/master/markdown)
 
+***
 
+## 💻 one commit per day! 💻
 
-## Today I Learned (2021-09-30)
-
-* git-bash

@@ -1,12 +1,8 @@
-# Algorithm
+# Markdown
 
 ****
 
-* ## [test](https://github.com/gudwo0121/TIL.git/algorithm/test.md)
+* ## [typora](https://github.com/gudwo0121/TIL/tree/master/markdown/typora.md)
 
-
-
-### Today I Learned (2021-09-29)
-
-* test
+***
 

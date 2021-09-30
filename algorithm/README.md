@@ -2,11 +2,7 @@
 
 ****
 
-* ## [test](https://github.com/gudwo0121/TIL.git/algorithm/test.md)
+* ## [null](https://github.com/gudwo0121/TIL/tree/master/algorithm/null.md)
 
-
-
-### Today I Learned (2021-09-29)
-
-* test
+***
 
