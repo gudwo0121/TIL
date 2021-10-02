@@ -10,13 +10,5 @@
 
 🎈 작성전에 순서랑 내용에 대해 미리 시뮬레이션하기 🎈
 
-***
-
-2. 자바 `mc.sn.gisa.selftest` 혼자 처음부터 끝까지 완성해보기
-
-   * Main.class
-   * DTO.class
-   * DAO.class
-
 ****
 
