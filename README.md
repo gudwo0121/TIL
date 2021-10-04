@@ -10,6 +10,8 @@
 
 * ## [markdown](https://github.com/gudwo0121/TIL/tree/master/markdown)
 
+* ## [sql](https://github.com/gudwo0121/TIL/tree/master/sql)
+
 ***
 
 ## 💻 one commit per day! 💻

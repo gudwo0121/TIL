@@ -9,3 +9,4 @@
 
 ****
 
+2. SQL week - TIL 작성 (~ing)
