@@ -7,13 +7,13 @@
 > `NUMBER(p, [s])`
 
 ```sql
--- [ 1234567.89 ]라는 숫자를 삽입한다고 가정
-NUMBER					-- [ 1234567.89 ] = 그대로 표현
-NUMBER(9)				-- [ 1234568 ] = 소수점 아래서 반올림
-NUMBER(9, 2)			-- [ 1234567.89 ] = 소수점 아래 2자리까지
-NUMBER(9, 1)			-- [ 1234567.89 ] = 소수점 아래 2자리에서 반올림
-NUMBER(*, 1)			-- [ 1234567.89 ] = [*]은 최대를 뜻하며, 소수점 1자리까지
-NUMBER(6)				-- 오류 = 7보다 작음
+-- [ 1234567.89 ]라는 숫자를 삽입한다고 가정한다
+NUMBER                          -- [ 1234567.89 ] = 그대로 표현
+NUMBER(9)                       -- [ 1234568 ] = 소수점 아래서 반올림
+NUMBER(9, 2)                    -- [ 1234567.89 ] = 소수점 아래 2자리까지 표현
+NUMBER(9, 1)                    -- [ 1234567.89 ] = 소수점 아래 2자리에서 반올림
+NUMBER(*, 1)                    -- [ 1234567.89 ] = [*]은 최대를 뜻하며, 소수점 1자리까지 표현
+NUMBER(6)                       -- 오류 = 7보다 작음
 ```
 
 ***
@@ -40,11 +40,9 @@ NVARCHAR2(8) : [N]과 [VAR]를 합친 개념
 
 ```sql
 DATE : 현재 [연, 월, 일, 시, 분, 초] 정보
-
 SYSDATE : 현재 날짜를 출력
--- 활용 예시
-INSERT INTO mDate VALUES (SYSDATE);
--- 결과 : [ 21/10/04 ] 삽입
+-- SYSDATE 예시
+INSERT INTO mDate VALUES (SYSDATE);             -- 결과 : [ 21/10/04 ] 삽입
 ```
 
 ***
@@ -54,8 +52,8 @@ INSERT INTO mDate VALUES (SYSDATE);
 > `NULL` / `NOT NULL`
 
 ```sql
-ex1 CHAR(5) NULL			-- NULL값이 있어도 된다
-ex2 CHAR(5) NOT NULL		-- NULL값이 있으면 안된다
+ex1 CHAR(5) NULL                          -- NULL값이 있어도 된다
+ex2 CHAR(5) NOT NULL                      -- NULL값이 있으면 안된다
 ```
 
 ***
