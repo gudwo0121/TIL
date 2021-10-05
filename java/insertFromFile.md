@@ -100,7 +100,7 @@ public void toDB() throws IOException, ClassNotFoundException, SQLException {
 			System.out.println("Insert into DB 작업완료");
 		}
 	}
-    // 작업 및 연결 종료
+    	// 작업 및 연결 종료
 	ps.close();
 	con.close();
 }
@@ -144,7 +144,7 @@ public class DTO {
 		this.local = local;
 	}
     
-    // 이하생략 [getter + setter]
+    	// 이하생략 [getter + setter]
 }
 ```
 

@@ -20,16 +20,16 @@ public static void main(String[] args) {
                 } else {
                     System.out.println("연결불가");
                 }
-            } catch (ClassNotFoundException | SQLException e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    // 연결 종료
-                    con.close();
-                } catch (SQLException e) {
+                } catch (ClassNotFoundException | SQLException e) {
                     e.printStackTrace();
+                } finally {
+                    try {
+                        // 연결 종료
+                        con.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
 }
 ```
 
