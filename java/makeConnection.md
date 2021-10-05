@@ -12,14 +12,14 @@ public static void main(String[] args) {
 
 		// 연결 + 연결확인
 		try {
-         	// DB 연결
-            	con = dt.makeConnection();
-            	// 연결여부 확인
-            	if (con != null) {
-                    System.out.println("연결완료");
-                } else {
-                    System.out.println("연결불가");
-                }
+                // DB 연결
+                    con = dt.makeConnection();
+                    // 연결여부 확인
+                    if (con != null) {
+                        System.out.println("연결완료");
+                    } else {
+                        System.out.println("연결불가");
+                    }
                 } catch (ClassNotFoundException | SQLException e) {
                     e.printStackTrace();
                 } finally {
