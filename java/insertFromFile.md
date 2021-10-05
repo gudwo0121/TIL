@@ -60,7 +60,7 @@ public ArrayList<DTO> toList() throws IOException {
 * ## toDB (List-to-DB)
 
 ```java
-// DB에 리스트 넣기
+// [list]를 [DB]로 삽입하는 작업 메소드
 public void toDB() throws IOException, ClassNotFoundException, SQLException {
 
 	// toList 실행한 값을 이곳의 list에 불러오기
@@ -94,12 +94,13 @@ public void toDB() throws IOException, ClassNotFoundException, SQLException {
 		ps.setString(10, temp.getGrade());
 		ps.setString(11, temp.getLocal());
 
-		// 작업 확인 (각 라인)
+		// 작업여부 확인 (각 라인)
 		int affectedCount = ps.executeUpdate();
 		if (affectedCount > 0) {
 			System.out.println("Insert into DB 작업완료");
 		}
 	}
+    // 작업 및 연결 종료
 	ps.close();
 	con.close();
 }
@@ -110,6 +111,7 @@ public void toDB() throws IOException, ClassNotFoundException, SQLException {
 * ## DTO
 
 ```java
+// Data Transfer Object
 public class DTO {
 
 	private int sno;
@@ -148,5 +150,5 @@ public class DTO {
 
 ***
 
-## 
+
 

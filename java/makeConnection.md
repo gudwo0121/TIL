@@ -12,24 +12,24 @@ public static void main(String[] args) {
 
 		// 연결 + 연결확인
 		try {
-             // DB 연결
-             con = dt.makeConnection();
-             // 연결 확인
-			if (con != null) {
-				System.out.println("연결완료");
-			} else {
-				System.out.println("연결불가");
-			}
-		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-                  // 연결 종료
-				con.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		}
+         	// DB 연결
+            con = dt.makeConnection();
+            // 연결여부 확인
+            if (con != null) {
+                System.out.println("연결완료");
+            } else {
+                System.out.println("연결불가");
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                // 연결 종료
+                con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
 }
 ```
 
@@ -38,7 +38,7 @@ public static void main(String[] args) {
 * ## makeConnection
 
 ```java
-// DB와 연결을 시켜주는 makeConnection 메소드
+// DB와 연결을 시켜주는 연결 작업 메소드
 public Connection makeConnection() throws ClassNotFoundException, SQLException {
 	Connection con = null;
 
@@ -52,11 +52,11 @@ public Connection makeConnection() throws ClassNotFoundException, SQLException {
 	Class.forName(driver);
     
     // DB 연결 -> HR 접속
-	con = DriverManager.getConnection(url, id, pwd);
-	
+    con = DriverManager.getConnection(url, id, pwd);
+    
     // 연결완료 : [con != null]
     // 연결불가 : [con == null]
-	return con;
+    return con;
 }
 ```
 
