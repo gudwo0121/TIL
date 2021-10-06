@@ -8,9 +8,9 @@
 
 * ## [JAVA-use-CRUD](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-use-CRUD.md)
 
-* ## [JAVA-use-SELECT](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-use-SELECT.md)
-
 * ## [JAVA-use-SELECT-WHERE](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-use-SELECT-WHERE.md)
+
+* ## [JAVA-use-SELECT](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-use-SELECT.md)
 
 ***
 
