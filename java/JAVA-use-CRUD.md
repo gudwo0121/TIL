@@ -1,8 +1,10 @@
-# C.R.U.D (Create-Read-Update-Delete)
+# JAVA-use-CRUD
 
 ***
 
-* ## 자바로 `C.R.U.D`하는 과정
+> ### 자바를 이용하여 CRUD하는 과정을 알아보자.
+
+* ## How to `C.R.U.D` 
 
   1. ### 드라이버 로딩
 

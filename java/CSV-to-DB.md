@@ -1,6 +1,8 @@
-# insertFromFile
+# CSV-to-DB
 
 ***
+
+> ### 자바를 이용하여 DB에 sample.csv를 삽입해보자.
 
 * ## main
 

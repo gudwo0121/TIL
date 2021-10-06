@@ -16,7 +16,7 @@ CREATE TABLE userTBL (
 );
 
 -- 새로운 테이블 생성과 동시에 다른 테이블의 속성들의 값 복사
-CREATE TABLE userTBL2 AS SELECT * FROM userTBL;     -- userTBL의 값들을 그대로 userTBL2에 넣기
+CREATE TABLE userTBL2 AS (SELECT * FROM userTBL);     -- userTBL의 값들을 그대로 userTBL2에 넣기
 ```
 ***
 

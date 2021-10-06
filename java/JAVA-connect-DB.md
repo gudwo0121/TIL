@@ -1,6 +1,8 @@
-# makeConnection
+# JAVA-connect-DB
 
 ***
+
+> ### 자바와 DB를 연결시켜 보자.
 
 * ## main
 

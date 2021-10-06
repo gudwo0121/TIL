@@ -10,3 +10,8 @@
 ****
 
 2. SQL week - TIL 작성 (~ing)
+
+* SELECT문 싹다 정리
+
+***
+
