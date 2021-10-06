@@ -28,8 +28,41 @@ SELECT * FROM userTBL WHERE userName = 'user';
 					                                                 -- [_] = 한 글자 무엇이든
 					                                                 -- [%]와 [_]를 맨 앞에 사용시 비효율적
 					                                                 
-					WHERE 
+----------------------------------------------------------------------------------------------------------------------------------------                                                                         
+					-- 서브쿼리 = 좀 더 세밀한 추출을 위해 사용
+					-- '김경호'의 키보다 큰 열
+					WHERE height > (SELECT height FROM userTBL WHERE userName = '김경호');
 					
+					-- 오류 : 서브쿼리에서 2개 이상의 값이 발생
+					WHERE height >= (SELECT height FROM userTBL WHERE addr = '경남');
+					
+					-- [ANY]는 2개 이상의 값의 합집합을 추출
+					-- ex) '170'과 '173'이 발생 = '170'이상 채택
+					WHERE height >= ANY (SELECT height FROM userTBL WHERE addr = '경남');
+					
+					-- [ANY]는 2개 이상의 값의 교집합을 추출
+					-- ex) '170'과 '173'이 발생 = '173'이상 채택
+					WHERE height >= ALL (SELECT height FROM userTBL WHERE addr = '경남');
+					
+					-- [ORDER BY]는 순서를 조절
+					-- [ASC]는 오름차순(default 생략가능) / [DESC]는 내림차순
+					ORDER BY height ASC;                             -- 키가 작은 순 정렬
+					ORDER BY height DESC;                            -- 키가 큰 순 정렬
+		
+-----------------------------------------------------------------------------------------------------------------------------------------
+        
+-- [DISTINCT]는 중복 값을 하나만 출력
+SELECT DISTINCT addr FROM userTBL;
+
+-- [GROUP BY]은 추출된 내용을 그룹화
+-- [HAVING]은 그룹화된 내용에 조건을 제시
+-- [AS]는 별칭 지정
+-- 1. [userid -> 구매자] [(가격*수량)의 합 -> 총 소비액]으로 별칭 지정
+-- 2. [buyTBL]의 [구매자], [총 소비액]을 [구매자] 기준으로 그룹화
+-- 3. 그룹화된 목록에서 [총 소비액]이 '1000'보다 큰 열만 추출
+SELECT userid AS "구매자", SUM(price*amount) AS "총 소비액" FROM buyTBL GROUP BY userid HAVING SUM(price*amount) > 1000;
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 ```
 
 ***
