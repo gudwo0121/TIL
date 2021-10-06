@@ -21,7 +21,7 @@ SELECT * FROM userTBL WHERE userName = 'user';
 					
 					WHERE height BETWEEN 180 AND 183;                -- 키가 180~183 사이인 열
 					
-					WHERE addr IN('경남','전남','경북');              -- 주소가 (경남 or 전남 or 경북)인 열
+					WHERE addr IN('경남','전남','경북');             -- 주소가 (경남 or 전남 or 경북)인 열
 					
 					WHERE userName LIKE '김%';                       -- 이름이 '김'으로 시작하는 모든 열
 					                                                 -- [%] = 글자수 상관없이 무엇이든
