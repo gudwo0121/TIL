@@ -65,3 +65,15 @@ ex2 CHAR(5) NOT NULL                      -- NULL값이 있으면 안된다
 
 ***
 
+* ## 형 변환
+
+> `CAST ([data] AS [type])`
+
+```sql
+-- 수량(amount)의 평균을 NUMBER(3) 형식에 맞춰서 변환하여 추출
+SELECT CAST(AVG(amount) AS NUMBER(3)) FROM buyTBL;
+```
+
+***
+
+## 
