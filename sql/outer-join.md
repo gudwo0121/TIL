@@ -24,16 +24,16 @@
 
 ```sql
 -- ( FULL = LEFT + RIGHT )로 볼수 있음
-SELECT S.STDNAME, S.ADDR, C.CLUBNAME, C.ROOMNO          -- 추출할 속성들
+SELECT S.stdname, S.addr, C.clubname, C.roomno          --  [stdTBL]의 [stdname, addr] + [clubTBL]의 [clubname, roomno]
 FROM stdTBL S
 
     FULL OUTER JOIN stdclubTBL SC                       -- LEFT JOIN 사용시 = line7:[성시경] 포함
                                                         -- RIGHT JOIN 사용시 = line7:[성시경] 미포함
-    ON S.STDNAME = SC.STDNAME
+    ON S.stdname = SC.stdname
     
     FULL OUTER JOIN clubTBL C                           -- LEFT JOIN 사용시 = line7:[성시경] 포함 / line8:[수영] 미포함
                                                         -- RIGHT JOIN 사용시 = line7:[성시경] 미포함 / line8:[수영] 포함
-    ON SC.CLUBNAME = C.CLUBNAME;
+    ON SC.clubname = C.clubname;
 ```
 
 * **실행 결과**
