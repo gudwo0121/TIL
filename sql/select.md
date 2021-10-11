@@ -21,7 +21,7 @@ SELECT * FROM userTBL WHERE userName = 'user';
 					
 					WHERE height BETWEEN 180 AND 183;                -- 키가 180~183 사이인 열
 					
-					WHERE addr IN('경남','전남','경북');             -- 주소가 (경남 or 전남 or 경북)인 열
+					WHERE addr IN('경남','전남','경북');              -- 주소가 (경남 or 전남 or 경북)인 열
 					
 					WHERE userName LIKE '김%';                       -- 이름이 '김'으로 시작하는 모든 열
 					                                                 -- [%] = 글자수 상관없이 무엇이든
@@ -59,6 +59,40 @@ SELECT DISTINCT addr FROM userTBL;
 -- [AS]는 별칭 지정
 -- [SUM]은 [GROUP BY]와 같이 쓰임
 SELECT userid AS "구매자", SUM(price*amount) AS "총 소비액" FROM buyTBL GROUP BY userid HAVING SUM(price*amount) > 1000;
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+-- 3중 쿼리문에서 rownum 초기화
+SELECT b.stdno
+FROM
+    ( SELECT ROWNUM r, a.*
+        FROM
+            ( SELECT stdno, ( kor + eng ) score
+                FROM
+                    studentTBL
+                WHERE
+                    localcode = 'B'
+            ) a                                            -- a 서브쿼리 
+    ) b                                                    -- b 서브쿼리
+WHERE
+    b.r = 5;                                               -- a 서브쿼리에서 바로 rownum을 사용하여 5번째를 추출하면
+                                                           -- 실행이 불가하며 b 서브쿼리로 감싼 후 추출해야한다.
+                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+-- [WHERE]절에는 별칭을 사용불가
+SELECT
+    ( CASE acccode
+            WHEN 'A'   THEN tot + 5
+            WHEN 'B'   THEN tot + 15
+            WHEN 'C'   THEN tot + 20
+        END
+    ) tscore, ( eng + kor ) ek                             -- [ek]라는 별칭을 정의한다 가정한다.
+FROM
+    studentTBL
+WHERE
+    ( eng + kor ) >= 120                                   -- [ek >= 120] 불가능, [WHERE]절에는 별칭을 쓸 수 없다.
+ORDER BY tscore;
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 ```
