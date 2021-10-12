@@ -2,14 +2,11 @@
 
 ****
 
-1.  깃허브 **`one commit per day!`**
-   * git-bash 작성 (one by one)
-   * java  작성 (one by one)
-   * algorithm 작성 (one by one)
+> ## Github - Daily Commit 🔥
 
-****
+***
 
-2. SQL week - TIL 작성 (~ing)
+> ## TIL - HTML 🔥
 
 ***
 
