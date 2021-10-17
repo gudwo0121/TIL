@@ -15,5 +15,4 @@
 - css (. #)
 - mysql (create, use)
 
-- 자소서 (*)
 
