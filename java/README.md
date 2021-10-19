@@ -18,7 +18,7 @@
 
 * ## [JAVA-use-Collections](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-use-Collections.md)
 
-* ## [JAVA-Export-Import](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-Export-Import.md)
+* ## [Eclipse-Export-Import](https://github.com/gudwo0121/TIL/blob/master/java/Eclipse-Export-Import.md)
 
 * ## [JAVA-use-Servlet](https://github.com/gudwo0121/TIL/blob/master/java/JAVA-use-Servlet.md)
 

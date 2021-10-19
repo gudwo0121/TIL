@@ -1,8 +1,8 @@
-# Eclipse-use-Servlet
+# JAVA-use-Servlet
 
 ***
 
-> ### 이클립스를 이용하여 Servlet을 활용해보자.
+> ### 자바를 이용하여 Servlet을 활용해보자.
 
 1. ####  `Dynamic Web Project` 생성 -> `src/main/java` -> 패키지 생성
 
