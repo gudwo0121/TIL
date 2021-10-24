@@ -79,4 +79,4 @@ public class MemberController extends HttpServlet {
 
 
 
-* ### 자바로 `MVC`를 활용하기 위해 `View`에서 입력받은 값을 서버에서 로직 처리하는 기술이 `Servlet`이다.
+* ### 자바로 `MVC`를 활용하기 위해 `View`에서 입력받은 값을 서버에서 로직 처리하는 기술 단위가 `Servlet`이다.

@@ -4,6 +4,8 @@
 
 * ## [MVC-pattern]()
 
+* ## [Servlet-XML]()
+
 * ## [Servlet-use-ConnectionPool]()
 
 * ## [Servlet-use-QueryString]()
