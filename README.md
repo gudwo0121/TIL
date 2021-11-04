@@ -14,5 +14,5 @@
 
 ***
 
-## 💻 one commit per day! 💻
+## 💻 one commit per week! 💻
 
