@@ -12,6 +12,8 @@
 
 * ## [spring](https://github.com/gudwo0121/TIL/tree/master/spring)
 
+* ## [python](https://github.com/gudwo0121/TIL/tree/master/python)
+
 ***
 
 ## 💻 one commit per week! 💻
