@@ -8,13 +8,6 @@
 
 * ## [sql](https://github.com/gudwo0121/TIL/tree/master/sql)
 
-* ## [servlet](https://github.com/gudwo0121/TIL/tree/master/servlet)
-
-* ## [spring](https://github.com/gudwo0121/TIL/tree/master/spring)
-
-* ## [python](https://github.com/gudwo0121/TIL/tree/master/python)
 
 ***
-
-## 💻 one commit per week! 💻
 
